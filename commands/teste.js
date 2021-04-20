@@ -5,7 +5,7 @@ module.exports = {
     execute(client, message, args, Discord) {
         setInterval(() => {
             for (let i = 0; i < 5; i++) {
-                const channel = client.channels.cache.find(channel => channel.name === spam)
+                const channel = client.channels.cache.find(channel => channel.name === "spam")
                 channel.send("deu certo")
                 //console.log("teste" + i )
             }
