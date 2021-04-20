@@ -4,9 +4,9 @@ module.exports = {
     description: "this sends help!",
     execute(client, message, args, Discord) {
         setInterval(() => {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 1; i++) {
                 console.log("teste" + i )
             }
-        }, 7000)
+        }, 50000)
     }
 }
