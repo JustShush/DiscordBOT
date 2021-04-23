@@ -7,7 +7,7 @@ module.exports = {
             for (let i = 0; i < 1; i++) {
                 const channel = client.channels.cache.find(channel => channel.name === "spam")
                 channel.send("+teste")
-                //console.log("teste" + i )
+                console.log("teste" + i )
             }
         }, 50000)
     }
