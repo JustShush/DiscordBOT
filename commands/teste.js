@@ -9,6 +9,6 @@ module.exports = {
                 channel.send("+teste")
                 //console.log("teste" + i )
             }
-        }, 7000)
+        }, 50000)
     }
 }
