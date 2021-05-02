@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'commands',
+    name: 'command',
     permissions: [],
     description: "this sends help!",
     execute(client, message, args, Discord) {
