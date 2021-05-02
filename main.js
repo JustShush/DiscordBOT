@@ -13,6 +13,21 @@ client.events = new Discord.Collection();
   require(`./handlers/${handler}`)(client, Discord)
 })
 
+client.on('message', message => {
+  if (message.content.includes("<@!747412110782234654>")) {  // quando as pessoas dao ping no bot ele reponde com isto
+
+    const pingEmbed = new Discord.MessageEmbed()
+      .setColor('#323436')
+      .setDescription(`Hi <@${message.author.id}> \n Prefix: \`+\` \n If you need any help type: \`+help\` `)
+      .addFields({
+        name: '\u200B',
+        value: "[Support-Server](https://discord.gg/BSfXFmB) | [Invite Bot](https://discord.com/oauth2/authorize?client_id=747412110782234654&scope=bot&permissions=2146958847) | [Vote](https://top.gg/bot/747412110782234654)"
+      })
+      .setFooter('Developed by JustShush#1995');
+    message.channel.send(pingEmbed);
+    //message.delete()                                
+  }
+});
 
 //const memberCounter = require('./counters/member-counter');
 
